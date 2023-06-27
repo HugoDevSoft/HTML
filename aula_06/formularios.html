@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charser="uft-8">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Trabalhando com Tags para formulários</h1>
+    <hr>
+    <p>Elementos para formulários são voltados à interação com o usuário.
+        Entrada de dados, seleção de opção, processamento para
+        manipulação de dados entre outros.
+    </p>
+    <p>Formulários no HTML são somente uma <mark><b>Interface</b></mark>.</p>
+    <p>Para que o formulário funcione, é necessario combina-lo com uma
+        <mark><b>linguagem de programação</b></mark>.</p>
+
+
+    <h2>Exemplos</h2>
+    <form action="#" method="post">
+        <!--Post é tag que é usada para pega seu formulario e postar no banco de dados-->
+        <p>
+            <label for="nome">Nome: </label>
+            <input required type="text" id="nome" name="nome" placeholder="Nome Completo">
+        </p>
+        <p>
+            <label>Profissão: </label>
+            <input required type="text" id="Profissão" name="Profissão" placeholder="Sua Profissão" maxlength="10"> <!--maxlength determina a quantidade caracteres-->
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input required type="email" id="email" name="email"></p><!--Não Requerid é quando voce obrigar o formulario executar mesmo sem o preenchimento da celula -->
+        <p>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone">
+        </p>
+        <p>Você está Trabalhando?</p>
+        <p> <!--Cuidado ao usar o Radio, pois ele precisa estar com o mesmo name em todas as opções-->
+            <input type="radio" id="sim" name="trabalha" value="SIM">
+            <label for="sim">SIM</label>
+            <input type="radio" id="nao" name="trabalha" value="NÃo">
+            <label for="nao">NÃO</label>
+        </p>
+        <hr>
+        <p>Interesses: </p>
+        <p>
+            <input type="checkbox" id="html15" name="interesses">
+            <label for="html5">HTML5</label>
+            <input type="checkbox" id="css3" name="interesses">
+            <label for="css3">CSS</label>
+            <input type="checkbox" id="javascript" name="interesses">
+            <label for="javascript">javascript</label>
+        </p>
+        <p>
+            <label for="nascimento">Nascimento: </label>
+            <input type="date" id="nascimento" name="nascimento">
+        </p>
+        <p>
+            <label for="cor">Qual sua cor favorita</label>
+            <input type="color" id="cor" name="cor">
+        </p>
+        <p>
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade">
+        </p>
+        <p>
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto">
+                <option selected disabled hidden>Selecione</option><!--Com hidden ele não chega nen aparece no site e sem ele aparece porém não clickavél-->
+                <option value="">Elogios</option>
+                <option value="">Reclamações</option>
+                <option value="">Sugestões</option>
+            </select>
+        </p>
+        <p>
+            <label for="mensagem">Deixe sua mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea>
+        </p>
+
+        <button id="btnEnviar">Enviar</button>
+    </form>
+</body>
+
+
+
+
+</html>
